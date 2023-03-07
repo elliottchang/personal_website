@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -102,14 +103,111 @@
   display: block;
   background: white;
   width: 100%;
+  height: 50px;
+  border-radius: 20px;
+  max-height: 0;
+  transition: max-height 0.3s, padding 0.5s;
+  overflow-y: scroll;
+}
+
+.accordion .textboxb {
+  display: block;
+  background: white;
+  width: 100%;
   height: 100px;
   border-radius: 20px;
-  color: black;
   max-height: 0;
-  overflow: hidden;
   transition: max-height 0.3s, padding 0.5s;
-  display: flex;
+  overflow-y: scroll;
 }
+
+.accordion .textboxb .item{
+  color: black;
+  display: flex;
+  height: 100px;
+}
+
+.accordion .textboxb .iteml{
+  color: black;
+  display: flex;
+  height: 100px;
+  margin-top: 20px;
+}
+
+.accordion .textboxb .list{
+  margin: auto;
+  width: 80%
+}
+
+.accordion .textboxb .column{
+  margin: auto;
+  width: 26.67%
+}
+
+.accordion .textboxb .column p{
+  font-size: 15px;
+  line-height: 15px;
+}
+
+
+.accordion .textboxb .title{
+  margin: auto;
+  width: 20%
+}
+
+.accordion .textboxb h3{
+  font-weight: 300;
+}
+
+.accordion .textbox .item{
+  color: black;
+  display: flex;
+  height: 50px;
+}
+
+.accordion .textbox .iteml{
+  color: black;
+  display: flex;
+  height: 50px;
+  margin-top: 20px;
+}
+
+.accordion .textbox .title{
+  width: 20%;
+  margin: auto;
+}
+
+.accordion .textbox .description{
+  width: 60%;
+  margin: auto;
+}
+
+.accordion .textbox .file{
+  width: 20%;
+  height: 50px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.accordion .textbox .file img{
+  height: 60%;
+  margin-top: 7.5px;
+}
+
+.accordion .textbox .file p{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.accordion .textbox .title h3{
+  font-weight: 300;
+}
+
+.accordion .textbox .description h4{
+  font-weight: 300;
+}
+
 
 .accordion li{
   list-style: none;
@@ -139,28 +237,63 @@ input[type="checkbox"]{
   padding: 20px;
 }
 
-.accordion .textbox .item{
-  display: flex;
-  justify-content: center;
-  flex: 1;
+.accordion input[type="checkbox"]:checked + label + .textboxb{
+  max-height: 400px;
+  padding: 20px;
 }
 
-.accordion .textbox .item:hover{
-  margin: auto;
-  display: flex;
-  justify-content: center;
+.accordion .textbox a{
   flex: 1;
+  margin: auto;
+}
+
+.accordion .textbox a:hover{
   border-radius: 10px;
   background-color: rgb(241, 239, 239);
 }
 
-.accordion .textbox .item a{
+.accordion .textbox a{
   text-decoration: none;
   text-align: center;
   color: black;
 }
 
-.accordion .textbox .item img{
-  height: 60px;
-  width: 60px;
+.accordion .box{
+  display: block;
+  background: white;
+  width: 100%;
+  height: 100px;
+  border-radius: 20px;
+  max-height: 0;
+  transition: max-height 0.3s, padding 0.5s;
+  overflow-y: scroll;
+}
+
+.accordion .textbox1 {
+  color: black;
+  display: flex;
+}
+
+.accordion .textbox1 .item2{
+  margin:20px;
+}
+
+.accordion .textbox1 .item2 h3{
+  font-weight: 100;
+}
+
+.accordion .textbox1 .item3{
+  display: block;
+  justify-content: center;
+  margin:auto;
+  margin-top: 0px;
+}
+
+.accordion .textbox1 .item3 ul li{
+  font-size: 10px;
+  padding: 1px;
+}
+
+hr{
+  margin-top: 20px;
 }
