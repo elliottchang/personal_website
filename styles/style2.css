@@ -1,0 +1,416 @@
+html{
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/portland.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .logo {
+    width: 50px;
+    cursor: pointer;
+    border-radius: 50px;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+  }
+  
+  
+  .navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  
+  .navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+    font-size: x-large;
+  }
+  
+  .currentPage a{
+    color: rgb(255, 89, 0);
+  }
+  
+  .socials {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    font-weight: 200;
+  }
+  
+  .socials ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 5px;
+  }
+  
+  .socials img{
+    width: 30px;
+    cursor: pointer;
+    border-radius: 50px;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    background-color: white;
+  }
+  
+  .socials img:hover{
+    border-color: rgb(255, 89, 0);
+    transition: 0.3s;
+  }
+  
+  
+  
+  .navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+  }
+  .navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: rgb(255, 89, 0);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+  }
+  .navbar ul li:hover::after{
+    width: 100%;
+  }
+  .content{
+    color: white;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50);
+    text-align: center;
+  }
+  
+  .content h1{
+    font-size: 70px;
+    margin-top: -40px;
+    font-weight: 50;
+  }
+  .content p{
+    margin: 20px;
+    font-weight: 100;
+    line-height: 25px;
+  }
+  
+  .content1{
+    color: white;
+    width: 80%;
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50);
+    left: 10%;
+  }
+  .content1 h1{
+    font-size: 70px;
+    margin-top: -40px;
+    font-weight: 50;
+  }
+  .content1 p{
+    font-weight: 100;
+    line-height: 25px;
+  }
+  
+  .content1 h2{
+    font-weight: 100;
+    line-height: 50px;
+  }
+  
+  .content1 a{
+    color: rgb(255, 89, 0);
+  }
+  
+  .content1 .aboutme{
+    display: block;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 50px;
+    overflow-y: scroll;
+  }
+  
+  .content1 .aboutme .period{
+    font-weight: 200;
+  }
+  
+  .accordion .textbox {
+    display: block;
+    background: white;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    max-height: 0;
+    transition: max-height 0.3s, padding 0.5s;
+    overflow-y: scroll;
+  }
+  
+  .accordion .textboxb {
+    display: block;
+    background: white;
+    width: 100%;
+    height: 100px;
+    border-radius: 20px;
+    max-height: 0;
+    transition: max-height 0.3s, padding 0.5s;
+    overflow-y: scroll;
+  }
+  
+  .accordion .textboxb .item{
+    color: black;
+    display: flex;
+    height: 100px;
+  }
+  
+  .accordion .textboxb .iteml{
+    color: black;
+    display: flex;
+    height: 100px;
+    margin-top: 20px;
+  }
+  
+  .accordion .textboxb .list{
+    margin: auto;
+    width: 80%
+  }
+
+  .accordion .textboxb .list p{
+    font-size: 12px;
+  }
+  
+  .accordion .textboxb .column{
+    margin: auto;
+    width: 26.67%
+  }
+  
+  .accordion .textboxb .column p{
+    font-size: 15px;
+    line-height: 15px;
+  }
+  
+  
+  .accordion .textboxb .title{
+    margin: auto;
+    width: 20%
+  }
+  
+  .accordion .textboxb h3{
+    font-weight: 300;
+  }
+  
+  .accordion .textboxb .description{
+    width: 50%;
+    margin: auto;
+  }
+  
+  .accordion .textboxb .file{
+    height: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .accordion .textboxb .file img{
+    height: 60%;
+    margin-top: 7.5px;
+  }
+  
+  .accordion .textboxb .file p{
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  
+  .accordion .textbox .item{
+    color: black;
+    display: flex;
+    height: 50px;
+  }
+  
+  .accordion .textbox .iteml{
+    color: black;
+    display: flex;
+    height: 50px;
+    margin-top: 20px;
+  }
+  
+  .accordion .textbox .title{
+    width: 20%;
+    margin: auto;
+  }
+  
+  .accordion .textbox .description{
+    width: 60%;
+    margin: auto;
+  }
+  
+  .accordion .textbox .file{
+    width: 20%;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .accordion .textbox .file img{
+    height: 60%;
+    margin-top: 7.5px;
+  }
+  
+  .accordion .textbox .file p{
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  
+  .accordion .textbox .title h3{
+    font-weight: 300;
+  }
+  
+  .accordion .textbox .description h4{
+    font-weight: 300;
+  }
+  
+  
+  .accordion li{
+    list-style: none;
+  }
+  
+  .accordion li label{
+    font-weight: 100;
+    line-height: 50px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 300px;
+  }
+  
+  .accordion .textbox ul li{
+    padding: 10px;
+    overflow-wrap: normal;
+  }
+  
+  input[type="checkbox"]{
+    display: none;
+  }
+  
+  .accordion input[type="checkbox"]:checked + label + .textbox{
+    max-height: 400px;
+    padding: 20px;
+  }
+  
+  .accordion input[type="checkbox"]:checked + label + .textboxb{
+    max-height: 400px;
+    padding: 20px;
+  }
+  
+  .accordion .textbox a{
+    flex: 1;
+    margin: auto;
+  }
+  
+  .accordion .textbox a:hover{
+    border-radius: 10px;
+    background-color: rgb(241, 239, 239);
+  }
+  
+  .accordion .textbox a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+  }
+  
+  .accordion .textboxb a{
+    flex: 1;
+    margin: auto;
+  }
+  
+  .accordion .textboxb a:hover{
+    border-radius: 10px;
+    background-color: rgb(241, 239, 239);
+  }
+  
+  .accordion .textboxb a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+  }
+  
+  .accordion .box{
+    display: block;
+    background: white;
+    width: 100%;
+    height: 100px;
+    border-radius: 20px;
+    max-height: 0;
+    transition: max-height 0.3s, padding 0.5s;
+    overflow-y: scroll;
+  }
+  
+  .accordion .textbox1 {
+    color: black;
+    display: flex;
+  }
+  
+  .accordion .textbox1 .item2{
+    margin:20px;
+  }
+  
+  .accordion .textbox1 .item2 h3{
+    font-weight: 100;
+  }
+  
+  .accordion .textbox1 .item3{
+    display: block;
+    justify-content: center;
+    margin:auto;
+    margin-top: 0px;
+  }
+  
+  .accordion .textbox1 .item3 ul li{
+    font-size: 10px;
+    padding: 1px;
+  }
+  
+  hr{
+    margin-top: 20px;
+  }
+  
+  
+  .rotate_image {
+    margin-left: 10px;
+    width: 15px;
+    transition: 0.4s;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  
+  .accordion input[type="checkbox"]:checked + label .rotate_image{
+    transition: 0.4s;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
